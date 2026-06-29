@@ -1,2 +1,2 @@
 # the-odin-projects
-Learning webdev from https://www.theodinproject.com/
+Learning webdev from [The Odin Project](https://www.theodinproject.com/).

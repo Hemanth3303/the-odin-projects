@@ -1,6 +1,6 @@
 # Project 1 - Recipes
 
-A simple webpage showing recipes
+A simple webpage showing recipes based on [this task](https://www.theodinproject.com/lessons/foundations-recipes).
 
 ## Images attribution
 

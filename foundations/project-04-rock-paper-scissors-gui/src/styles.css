@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/*
+	  pallete or some shit like that
+	*/
+	--bg-color-1: #222831;
+	--bg-color-2: #393E46;
+	--bg-color-3: #292d33;
+	--text-color-1: #948979;
+	--text-color-2: #DFD0B8;
+	--text-color-3: #E9E9E9;
+}
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	background-color: var(--bg-color-2);
+	color: var(--text-color-3);
+
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 100dvh;
+}
+
+header,
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: var(--bg-color-1);
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+	flex-shrink: 0;
+}
+
+h1.heading {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+footer {
+	margin-top: auto;
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.game-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 2rem;
+	margin: 3rem 0;
+}
+
+.score-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.score-title,
+.round-counter {
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	color: var(--text-color-1);
+	font-weight: 700;
+}
+
+.action-prompt {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--text-color-3);
+}
+
+.choices-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	row-gap: 2rem;
+	text-align: center;
+	width: 70%;
+	padding: 2.5rem 3rem 5rem 3rem;
+	background-color: var(--bg-color-3);
+	border-style: none;
+	border-radius: 0.5rem;
+}
+
+.choice-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.chosen-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+
+.btn {
+	color: var(--text-color-2);
+	background-color: var(--bg-color-2);
+	border: 2px solid var(--bg-color-1);
+	border-radius: 0.7rem;
+	padding: 1.5rem 2.5rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	cursor: pointer;
+	width: 140px;
+	text-align: center;
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+	background-color: var(--bg-color-1);
+	color: var(--text-color-3);
+	transform: translateY(-2px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+	transform: translateY(1px);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

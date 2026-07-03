@@ -110,15 +110,6 @@ footer {
 	gap: 2rem;
 }
 
-.chosen-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 2rem;
-}
-
-
 .btn {
 	color: var(--text-color-2);
 	background-color: var(--bg-color-2);
@@ -135,19 +126,19 @@ footer {
 	justify-content: center;
 	align-items: center;
 
-	box-shadow: 0 4px 6px --var(--bg-color-7);
+	box-shadow: 0 4px 6px var(--bg-color-7);
 }
 
 .btn:hover {
 	background-color: var(--bg-color-1);
 	color: var(--text-color-3);
 	transform: translateY(-2px);
-	box-shadow: 0 6px 12px --var(--bg-color-8);
+	box-shadow: 0 6px 12px var(--bg-color-8);
 }
 
 .btn:active {
 	transform: translateY(1px);
-	box-shadow: 0 2px 4px --var(--bg-color-7);
+	box-shadow: 0 2px 4px var(--bg-color-7);
 }
 
 .modal-overlay {

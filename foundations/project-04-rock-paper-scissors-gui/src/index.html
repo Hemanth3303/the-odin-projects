@@ -14,7 +14,7 @@
 
 	<link rel="stylesheet" href="./styles.css">
 
-	<script type="module" src="./script.js"></script>
+	<script type="module" src="./main.js"></script>
 </head>
 
 <body>
@@ -48,24 +48,15 @@
 					<button type="button" class="btn" id="scissorsBtn">Scissors</button>
 				</div>
 			</div>
-			<div class="chosen-container">
-				<div>
-					You Chose: <span id="humanChose">Waiting...</span>
-				</div>
-				<div>
-					Computer Chose: <span id="computerChose">Waiting...</span>
-				</div>
-
-			</div>
 		</section>
 		<section class="modals">
 			<div class="modal-overlay hidden" id="roundModal">
 				<div class="modal-box">
 					<h2 class="modal-title">
-						<span id="roundModalTitleText">Round Won!</span>
+						<span id="roundModalTitleText"></span>
 					</h2>
 					<p class="modal-text">
-						<span id="roundModalInfoText">Your scissors cut computer's paper!!!</span>
+						<span id="roundModalInfoText"></span>
 					</p>
 					<button type="button" class="btn" id="nextRoundBtn">Next Round</button>
 				</div>
@@ -73,11 +64,11 @@
 
 			<div class="modal-overlay hidden" id="gameOverModal">
 				<div class="modal-box final-victory">
-					<h2 class="modal-title" id="finalModalTitleText">
-						Victory
+					<h2 class="modal-title" id="gameOverModalTitleText">
+
 					</h2>
-					<p class="modal-text" id="finalModalInfoText">
-						You won the tournament!
+					<p class="modal-text" id="gameOverModalInfoText">
+
 					</p>
 					<button type="button" class="btn" id="playAgainBtn">Play Again</button>
 				</div>

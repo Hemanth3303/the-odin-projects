@@ -11,6 +11,11 @@
 	--bg-color-1: #222831;
 	--bg-color-2: #393E46;
 	--bg-color-3: #292d33;
+	--bg-color-4: rgba(0, 0, 0, 0.7);
+	--bg-color-5: rgba(0, 0, 0, 0.5);
+	--bg-color-6: rgba(223, 208, 184, 0.2);
+	--bg-color-7: rgba(0, 0, 0, 0.2);
+	--bg-color-8: rgba(0, 0, 0, 0.3);
 	--text-color-1: #948979;
 	--text-color-2: #DFD0B8;
 	--text-color-3: #E9E9E9;
@@ -130,17 +135,69 @@ footer {
 	justify-content: center;
 	align-items: center;
 
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 6px --var(--bg-color-7);
 }
 
 .btn:hover {
 	background-color: var(--bg-color-1);
 	color: var(--text-color-3);
 	transform: translateY(-2px);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 6px 12px --var(--bg-color-8);
 }
 
 .btn:active {
 	transform: translateY(1px);
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 4px --var(--bg-color-7);
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--bg-color-4);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.modal-box {
+	background-color: var(--bg-color-3);
+	padding: 3rem;
+	border-radius: 0.8rem;
+	text-align: center;
+	box-shadow: 0 10px 30px var(--bg-color-5);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	width: 90%;
+	max-width: 400px;
+}
+
+.modal-title {
+	font-size: 2.5rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	color: var(--text-color-2);
+}
+
+.modal-text {
+	font-size: 1.1rem;
+	color: var(--text-color-3);
+	margin-bottom: 0.5rem;
+}
+
+.modal-box.final-victory {
+	border: 3px solid var(--text-color-2);
+	box-shadow: 0 0 40px var(--bg-color-6);
+}
+
+.hidden {
+	display: none !important;
 }

@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #808080;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.mainContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0;
+}
+
+.rowDiv {
+	display: flex;
+	flex-direction: row;
+}
+
+.cell {
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.cell-drawn {
+	background-color: black;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+}

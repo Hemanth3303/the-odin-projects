@@ -16,12 +16,14 @@ main {
 	gap: 0.5rem;
 }
 
-.mainContainer {
+.container {
+	border: 2px solid black;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 0;
+	background-color: white;
 }
 
 .rowDiv {
@@ -32,9 +34,9 @@ main {
 .cell {
 	background-color: white;
 	border: 1px solid rgba(0, 0, 0, 0.15);
+	opacity: 0;
 }
 
 .cell-drawn {
-	background-color: black;
 	border: 1px solid rgba(255, 255, 255, 0.15);
 }

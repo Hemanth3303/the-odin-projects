@@ -60,4 +60,21 @@ export function newGenBtnHandler(ctx) {
  */
 function handleCellPen(cell) {
 	cell.classList.add("cell-drawn");
+
+	let r = getRandomInt(0, 255);
+	let g = getRandomInt(0, 255);
+	let b = getRandomInt(0, 255);
+
+	cell.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+	let opacity = Number(cell.style.opacity) || 0;
+	cell.style.opacity = Math.min(opacity + 0.1, 1);
+}
+
+/**
+ * @param {number} min 
+ * @param {number} max 
+ * @returns {number}
+ */
+function getRandomInt(min, max) {
+	return Math.floor(Math.random() * (max - min + 1) + min);
 }

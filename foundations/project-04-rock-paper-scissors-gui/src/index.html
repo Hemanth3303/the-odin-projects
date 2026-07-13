@@ -2,82 +2,82 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Rock Paper Scissors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-	<link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css">
 
-	<script type="module" src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
 </head>
 
 <body>
-	<header>
-		<h1 class="heading">Rock Paper Scissors Game</h1>
-	</header>
+    <header>
+        <h1 class="heading">Rock Paper Scissors Game</h1>
+    </header>
 
-	<main>
-		<section class="game-container">
-			<div class="score-container">
-				<div class="score-title">
-					Current Scores
-				</div>
-				<div>
-					You: <span id="humanScore">0</span>
-				</div>
-				<div>
-					Computer: <span id="computerScore">0</span>
-				</div>
-			</div>
-			<div class="choices-container">
-				<div class="round-counter">
-					Round <span id="currentRound">0</span> out of <span id="numRounds">0</span>
-				</div>
-				<div class="action-prompt">
-					Choose a move
-				</div>
-				<div class="choice-buttons">
-					<button type="button" class="btn" id="rockBtn">Rock</button>
-					<button type="button" class="btn" id="paperBtn">Paper</button>
-					<button type="button" class="btn" id="scissorsBtn">Scissors</button>
-				</div>
-			</div>
-		</section>
-		<section class="modals">
-			<div class="modal-overlay hidden" id="roundModal">
-				<div class="modal-box">
-					<h2 class="modal-title">
-						<span id="roundModalTitleText"></span>
-					</h2>
-					<p class="modal-text">
-						<span id="roundModalInfoText"></span>
-					</p>
-					<button type="button" class="btn" id="nextRoundBtn">Next Round</button>
-				</div>
-			</div>
+    <main>
+        <section class="game-container">
+            <div class="score-container">
+                <div class="score-title">
+                    Current Scores
+                </div>
+                <div>
+                    You: <span id="humanScore">0</span>
+                </div>
+                <div>
+                    Computer: <span id="computerScore">0</span>
+                </div>
+            </div>
+            <div class="choices-container">
+                <div class="round-counter">
+                    Round <span id="currentRound">0</span> out of <span id="numRounds">0</span>
+                </div>
+                <div class="action-prompt">
+                    Choose a move
+                </div>
+                <div class="choice-buttons">
+                    <button type="button" class="btn" id="rockBtn">Rock</button>
+                    <button type="button" class="btn" id="paperBtn">Paper</button>
+                    <button type="button" class="btn" id="scissorsBtn">Scissors</button>
+                </div>
+            </div>
+        </section>
+        <section class="modals">
+            <div class="modal-overlay hidden" id="roundModal">
+                <div class="modal-box">
+                    <h2 class="modal-title">
+                        <span id="roundModalTitleText"></span>
+                    </h2>
+                    <p class="modal-text">
+                        <span id="roundModalInfoText"></span>
+                    </p>
+                    <button type="button" class="btn" id="nextRoundBtn">Next Round</button>
+                </div>
+            </div>
 
-			<div class="modal-overlay hidden" id="gameOverModal">
-				<div class="modal-box final-victory">
-					<h2 class="modal-title" id="gameOverModalTitleText">
+            <div class="modal-overlay hidden" id="gameOverModal">
+                <div class="modal-box final-victory">
+                    <h2 class="modal-title" id="gameOverModalTitleText">
 
-					</h2>
-					<p class="modal-text" id="gameOverModalInfoText">
+                    </h2>
+                    <p class="modal-text" id="gameOverModalInfoText">
 
-					</p>
-					<button type="button" class="btn" id="playAgainBtn">Play Again</button>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer>
-		Copyright &copy; Hemanth3303 2026
-	</footer>
+                    </p>
+                    <button type="button" class="btn" id="playAgainBtn">Play Again</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Copyright &copy; Hemanth3303 2026
+    </footer>
 </body>
 
 </html>

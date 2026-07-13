@@ -1,167 +1,167 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header,
 footer,
 .hero {
-	background-color: #1f2937;
+    background-color: #1f2937;
 }
 
 footer p {
-	padding-top: 15px;
-	padding-bottom: 10px;
-	margin-top: 5px;
-	text-align: center;
-	color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
 }
 
 .logo img {
-	width: 62px;
-	height: auto;
+    width: 62px;
+    height: auto;
 }
 
 .hero-main {
-	font-size: 48px;
-	color: #f9faf8;
-	font-weight: 900;
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
 }
 
 .hero-sub,
 .nav-item {
-	font-size: 18px;
-	color: #e5e7eb;
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 .btn {
-	color: #3882f6;
+    color: #3882f6;
 }
 
 .navbar {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	/* drop to next line */
-	justify-content: space-between;
-	align-items: start;
-	padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* drop to next line */
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px;
 }
 
 .nav-links {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	gap: 20px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
 }
 
 .nav-item {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .hero {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
 }
 
 .hero-img img {
-	width: 360px;
-	height: 240px;
-	display: block;
-	margin-bottom: 50px;
+    width: 360px;
+    height: 240px;
+    display: block;
+    margin-bottom: 50px;
 }
 
 .info-section {
-	margin: 50px 5px 50px 5px;
+    margin: 50px 5px 50px 5px;
 }
 
 .info-header {
-	font-size: 36px;
-	color: #1f2937;
-	font-weight: 900;
-	text-align: center;
-	margin-bottom: 30px;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .info-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .info-img {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	gap: 20px
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px
 }
 
 .info-img img {
-	border-style: solid;
-	border-radius: 15px;
-	border-color: #3b82f6;
-	width: 200px;
-	height: 200px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #3b82f6;
+    width: 200px;
+    height: 200px;
 }
 
 .quote-section {
-	background-color: #e5e7eb;
-	margin: 50px 0px;
-	padding: 50px;
+    background-color: #e5e7eb;
+    margin: 50px 0px;
+    padding: 50px;
 }
 
 .quote-container {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .quote-text {
-	font-weight: 300;
-	text-align: center;
+    font-weight: 300;
+    text-align: center;
 }
 
 .quote-source {
-	font-size: 18px;
-	color: #1f2937;
-	font-weight: 900;
-	text-align: center;
+    font-size: 18px;
+    color: #1f2937;
+    font-weight: 900;
+    text-align: center;
 }
 
 .action-section {
-	margin: 50px 300px;
-	padding: 20px 30px;
-	display: flex;
-	flex-direction: row;
-	background-color: #3b82f6;
-	border-radius: 10px;
-	align-items: center;
-	justify-content: space-between;
+    margin: 50px 300px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: #3b82f6;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .action-text {
-	margin: 0px 80px;
-	color: white;
+    margin: 0px 80px;
+    color: white;
 }
 
 .btn {
-	color: white;
-	background-color: #3b82f6;
-	padding: 10px 20px;
-	margin: 10px 0px;
-	border-radius: 10px;
-	border-style: solid;
-	border-color: white;
-	cursor: pointer;
-	display: inline-block;
+    color: white;
+    background-color: #3b82f6;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    cursor: pointer;
+    display: inline-block;
 }

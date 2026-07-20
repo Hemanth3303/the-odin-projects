@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*
+	  pallete or some shit like that
+	*/
+    --bg-color-1: #222831;
+    --bg-color-2: #393E46;
+    --bg-color-3: #292d33;
+    --bg-color-4: rgba(0, 0, 0, 0.7);
+    --bg-color-5: rgba(0, 0, 0, 0.5);
+    --bg-color-6: rgba(223, 208, 184, 0.2);
+    --bg-color-7: rgba(0, 0, 0, 0.2);
+    --bg-color-8: rgba(0, 0, 0, 0.3);
+    --text-color-1: #948979;
+    --text-color-2: #DFD0B8;
+    --text-color-3: #E9E9E9;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: var(--bg-color-2);
+    color: var(--text-color-3);
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100dvh;
+}
+
+main,
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: solid;
+    background-color: var(--bg-color-8);
+}
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center;
+    border: solid;
+
+    width: 95%;
+    height: 3em;
+    gap: 1rem;
+    margin: 1rem 2rem;
+    font-size: 2.5rem;
+    background-color: var(--bg-color-1);
+}
+
+.inputs, .result {
+    padding-right: 0.5rem;
+}
+
+.btns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.btns-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn {
+    color: var(--text-color-2);
+    background-color: var(--bg-color-6);
+    border: 2px solid var(--bg-color-1);
+    border-radius: 0.7rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 140px;
+    text-align: center;
+    margin: 0.1rem;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 4px 6px var(--bg-color-7);
+}
+
+.btn:hover {
+    background-color: var(--bg-color-1);
+    color: var(--text-color-3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px var(--bg-color-8);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px var(--bg-color-7);
+}

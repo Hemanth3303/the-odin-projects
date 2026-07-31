@@ -8,3 +8,14 @@ export class DivideByZeroError extends Error {
         }
     }
 }
+
+export class ImpossibleState extends Error {
+    constructor(message) {
+        super(message);
+        this.name = "ImpossibleState";
+        this.reason = "Reached an impossible state";
+        if (Error.captureStackTrace) {
+            Error.captureStackTrace(this, ImpossibleState);
+        }
+    }
+}
